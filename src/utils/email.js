@@ -12,7 +12,7 @@ const sendEmail = async ({ email, subject, mailgenContent }) => {
   });
 
   // Log to debug
-  console.log("Mailgen Content:", JSON.stringify(mailgenContent, null, 2));
+  // console.log("Mailgen Content:", JSON.stringify(mailgenContent, null, 2));
 
   const emailText = mailGenerator.generatePlaintext(mailgenContent);
   const emailHtml = mailGenerator.generate(mailgenContent);
